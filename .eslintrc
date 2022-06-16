@@ -1,0 +1,223 @@
+{
+    "env": {
+        "node": true,
+        "mocha": true,
+        "es6": true
+    },
+    "parser": "@babel/eslint-parser",
+    "extends": [
+        "eslint:recommended",
+        "google"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module",
+        "requireConfigFile": false
+    },
+    "plugins": [
+        "@babel",
+        "spellcheck"
+    ],
+    "rules": {
+        "no-console": 2,
+        "indent": [
+            "error",
+            2
+        ],
+        "strict": [
+            2,
+            "never"
+        ],
+        "require-jsdoc": 0,
+        "no-invalid-this": 0,
+        "max-len": [
+            1,
+            300
+        ],
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "no-await-in-loop": 1,
+        "camelcase": "off",
+        "new-cap": 0,
+        "eqeqeq": [
+            "error",
+            "always",
+            {
+                "null": "ignore"
+            }
+        ],
+        "one-var": [
+            "error",
+            "never"
+        ],
+        "spellcheck/spell-checker": [
+            "error",
+            {
+                "skipWords": [
+                    "kond",
+                    "armenia",
+                    "2hz",
+                    "vcube",
+                    "gdpr",
+                    "mysql",
+                    "redis",
+                    "localhost",
+                    "joi",
+                    "paypal",
+                    "axios",
+                    "signup",
+                    "xml",
+                    "zendesk",
+                    "morgan",
+                    "ttl",
+                    "appsumo",
+                    "frontend",
+                    "dotenv",
+                    "okta",
+                    "sso",
+                    "idp",
+                    "scim",
+                    "saml",
+                    "nps",
+                    "csv",
+                    "namespaces",
+                    "timestamps",
+                    "manuallog",
+                    "pos",
+                    "utf8",
+                    "lang",
+                    "bitrate",
+                    "webhook",
+                    "hdvoice",
+                    "afiliate",
+                    "enum",
+                    "vonage",
+                    "utm",
+                    "Ull",
+                    "cloudflare",
+                    "usd",
+                    "jpy",
+                    "mrkdwn_in",
+                    "iat",
+                    "utf",
+                    "gmail",
+                    "openid",
+                    "oauth",
+                    "schemas",
+                    "ietf",
+                    "nameid",
+                    "cpu",
+                    "gpu",
+                    "abb",
+                    "krytics",
+                    "redshift",
+                    "aggregator",
+                    "fqdn",
+                    "unix",
+                    "covid",
+                    "errored",
+                    "Talkdesk",
+                    "upgradable",
+                    "feedbacks",
+                    "amazonaws",
+                    "msg",
+                    "cancelled",
+                    "str",
+                    "ascii",
+                    "Consumptions",
+                    "charset",
+                    "unassign",
+                    "gte",
+                    "lte",
+                    "bool",
+                    "aggs",
+                    "pem",
+                    "fifo",
+                    "Fifo",
+                    "lname",
+                    "fname",
+                    "Deduplication",
+                    "enqueueing",
+                    "sendgrid",
+                    "aff",
+                    "lsr",
+                    "sftp",
+                    "sig",
+                    "algo",
+                    "Sequelize",
+                    "cors",
+                    "unsubscribers",
+                    "Unsubscribers",
+                    "href",
+                    "nooverride",
+                    "inactives",
+                    "proration",
+                    "etag",
+                    "oauthbearertoken",
+                    "refprogram",
+                    "cvc",
+                    "ReCaptcha",
+                    "Captcha",
+                    "testmode",
+                    "qa_endpoints",
+                    "isnot",
+                    "versa",
+                    "cdn",
+                    "ssl",
+                    "Hmmss",
+                    "pgm_id_setting_name",
+                    "typeform",
+                    "pnc",
+                    "plive",
+                    "linux",
+                    "onboarding",
+                    "hubspot",
+                    "hapikey"
+                ],
+                "identifiers": false,
+                "ignoreRequire": true,
+                "comments": false,
+                "skipIfMatch": [
+                    "http://[^s]*",
+                    "^[-\\w]+\/[-\\w\\.]+$",
+                    "(\\s|^)(pre|post)([-\\w]|[A-Z])[a-zA-Z]+(\\s|$)",
+                    "(\\s|^|\\w+)\\d+(st|nd|rd|th)(\\s|[A-Z][a-zA-Z]+|$)",
+                    "^[0-9a-f]{5,999}$",
+                    "^#[0-9a-f]{3,6}$",
+                    "^[-\\w]+\/[-\\w\\.]+$",
+                    "(K|k)risp",
+                    "re(q|s)",
+                    "talkdesk*",
+                    "(T|t)apfil?i?ate",
+                    "h(get|set|del|mac)"
+                ],
+                "minLength": 3,
+                "lang": "en_US"
+            }
+        ]
+    },
+    "overrides": [
+        {
+            "files": [
+                "./app/controllers/**/*.js"
+            ],
+            "rules": {
+                "valid-jsdoc": 0,
+                "require-jsdoc": [
+                    "error",
+                    {
+                        "require": {
+                            "FunctionDeclaration": false,
+                            "MethodDefinition": false,
+                            "ClassDeclaration": false,
+                            "ArrowFunctionExpression": false,
+                            "FunctionExpression": false
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
