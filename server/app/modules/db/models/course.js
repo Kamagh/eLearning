@@ -27,7 +27,7 @@ const Options = {
 };
 
 const Association = ({Course, Content, User, Category}) => {
-    Course.hasOne(Content, {
+    Course.hasMany(Content, {
         sourceKey: 'id',
         foreignKey: 'courseId',
     });
