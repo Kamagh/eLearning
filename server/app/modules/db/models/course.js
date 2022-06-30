@@ -29,7 +29,7 @@ const Options = {
 const Association = ({Course, Content, User, Category}) => {
     Course.hasMany(Content, {
         sourceKey: 'id',
-        foreignKey: 'courseId',
+        foreignKey: 'course_id',
     });
     Course.belongsToMany(User, {as: 'learners', through: 'UserCourseMapping'});
     Course.belongsTo(User, {as: 'creator'});

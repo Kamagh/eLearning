@@ -6,20 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
-    "migrate": "npx sequelize-cli db:migrate",
-    "unmigrate": "npx sequelize-cli db:migrate:undo"
+    "migrate": "cd app/modules/db && npx sequelize-cli db:migrate",
+    "unmigrate": "cd app/modules/db && npx sequelize-cli db:migrate:undo"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kamagh/eLearning.git"
   },
-  "author": "kaagh",
+  "author": "Kamo Aghbalyan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Kamagh/eLearning/issues"
   },
   "homepage": "https://github.com/Kamagh/eLearning#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",

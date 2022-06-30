@@ -17,6 +17,16 @@ module.exports = {
         type: DataTypes.STRING,
         allowNull: false,
       },
+      course_id: {
+        references: {
+          model: {
+            tableName: 'courses',
+          },
+          key: 'id',
+        },
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE',
+      }
     });
   },
 

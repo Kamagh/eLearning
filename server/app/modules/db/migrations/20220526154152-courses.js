@@ -13,13 +13,17 @@ module.exports = {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      contentId: {
+      creator_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
-      },
-      creatorId: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
+        references: {
+          model: {
+            tableName: 'users',
+          },
+          key: 'id',
+        },
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE',
       },
     });
   },

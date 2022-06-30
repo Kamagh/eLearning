@@ -14,6 +14,10 @@ const Scheme = {
         type: DataTypes.STRING,
         allowNull: false,
     },
+    course_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    }
 }
 
 const Options = {

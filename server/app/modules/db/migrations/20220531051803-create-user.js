@@ -9,22 +9,26 @@ module.exports = {
         type: DataTypes.INTEGER
       },
       firstName: {
+        allowNull: false,
         type: DataTypes.STRING
       },
       lastName: {
+        allowNull: false,
         type: DataTypes.STRING
       },
       email: {
+        allowNull: false,
         type: DataTypes.STRING
+      },
+      password: {
+        allowNull: false,
+        type: DataTypes.STRING,
       },
       company_name: {
         type: DataTypes.STRING
       },
       university_name: {
         type: DataTypes.STRING
-      },
-      created_course_id: {
-        type: DataTypes.INTEGER
       },
       createdAt: {
         allowNull: false,

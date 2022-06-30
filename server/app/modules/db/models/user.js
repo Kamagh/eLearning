@@ -2,30 +2,32 @@ const DataTypes = require("sequelize");
 
 const Scheme = {
     id: {
-        type: DataTypes.INTEGER,
         allowNull: false,
+        autoIncrement: true,
         primaryKey: true,
+        type: DataTypes.INTEGER
     },
-    first_name: {
-        type: DataTypes.STRING,
+    firstName: {
         allowNull: false,
+        type: DataTypes.STRING
     },
-    last_name: {
-        type: DataTypes.STRING,
+    lastName: {
         allowNull: false,
+        type: DataTypes.STRING
     },
     email: {
-        type: DataTypes.STRING,
         allowNull: false,
+        type: DataTypes.STRING
+    },
+    password: {
+        allowNull: false,
+        type: DataTypes.STRING,
     },
     company_name: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING
     },
     university_name: {
-        type: DataTypes.STRING,
-    },
-    created_course_id: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING
     },
 };
 
